@@ -23,7 +23,7 @@ img {
     height: auto;
 }
 
-/* шрифты google: , Lato */
+/* шрифт google: Lato */
 @font-face {
     font-family: 'Lato', cursive;
     font-weight: normal;
@@ -38,7 +38,7 @@ body{
   letter-spacing: 0.02em;
 }
 
-/* Layout.css */
+/* РАСПОЛОЖЕНИЕ */
 
 .container{
   padding-left: 30px;

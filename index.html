@@ -6,84 +6,70 @@
 		
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
-  <!-- шрифт google Lato -->
+		<!-- шрифт google Lato и rate-stars -->
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-
-	
+		
 	</head>
 	<body>
-
-
 		<div class="container">  <!-- background-container -->
-			<section class="card">  <!-- product-card -->
-
-
-				<header class="card__header">  <!-- logotype-product-card -->
-					<a href="#" class="card__logo"><img src="img/logo.png" alt="Nike"></a>
-				</header>
-
-<main>
-<form class="card__form pseudo" action="#">
-
-<div class="card__content-left float-left">
-<img src="img/nike_shoe.png" alt="">
-
-<div class="card__color"> <!-- buttons colors  -->
-
-<label class="card__color--btn-1">
-<input type="radio" name="color" value="dark" checked><span></span>
-</label>
-<label class="card__color--btn-2">
-<input type="radio" name="color" value="white"><span></span>
-</label>
-<label class="card__color--btn-3">
-<input type="radio" name="color" value="red"><span></span>
-</label>
-<label class="card__color--btn-4">
-<input type="radio" name="color" value="blue"><span></span>
-</label>
-</div>
-</div>
-
-<div class="card__content-right float-right">
-<h1 class="card__title">Nike SB Stefan Janoski Max</h1>
-<p class="card__subtitle">Unisex Skateboarding Shoe</p>
-							
-							<div class="card__rating">
-								<i class="star star--active"></i>
-								<i class="star star--active"></i>
-								<i class="star star--active"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-
-<div class="card__select"> <!-- Size shoe menu -->
-								<select>
-									<option>Size</option>
-									<option>41</option>
-									<option>42</option>
-									<option>43</option>
-									<option>44</option>
-									<option>45</option>
-								</select>
-								<select>
-									<option>Qty</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-<button class="card__button" type="submit">Add to cart</button>
-
-						</div>
-					</form>
-				</main>
-			</section>
-
+		<section class="card">  <!-- product-card -->
+		<header class="card__header">  <!-- logotype-product-card -->
+		<a href="#" class="card__logo"><img src="img/logo.png" alt="Nike"></a>
+	</header>
+	<main>
+		<form class="card__form pseudo" action="#">
+			<div class="card__content-left float-left"> <!-- контент слева  -->
+				<img src="img/nike_shoe.png" alt="">
+				<div class="card__color"> <!-- buttons colors  -->
+				<label class="card__color--btn-1">
+					<input type="radio" name="color" value="dark" checked><span></span>
+				</label>
+				<label class="card__color--btn-2">
+					<input type="radio" name="color" value="white"><span></span>
+				</label>
+				<label class="card__color--btn-3">
+					<input type="radio" name="color" value="red"><span></span>
+				</label>
+				<label class="card__color--btn-4">
+					<input type="radio" name="color" value="blue"><span></span>
+				</label>
+			</div>
 		</div>
-	</body>
+		<div class="card__content-right float-right">  <!-- контент справа  -->
+			<h1 class="card__title">Nike SB Stefan Janoski Max</h1>
+			<p class="card__subtitle">Unisex Skateboarding Shoe</p>
+			
+			<div class="card__rating">
+				<i class="star star--active"></i>
+				<i class="star star--active"></i>
+				<i class="star star--active"></i>
+				<i class="star"></i>
+				<i class="star"></i>
+			</div>
+			<div class="card__select"> <!-- Size shoe menu -->
+			<select>
+				<option>Size</option>
+				<option>41</option>
+				<option>42</option>
+				<option>43</option>
+				<option>44</option>
+				<option>45</option>
+			</select>
+			<select>
+				<option>Qty</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</div>
+		<button class="card__button" type="submit">Add to cart</button>
+	</div>
+</form>
+</main>
+</section>
+</div>
+</body>
 </html>
