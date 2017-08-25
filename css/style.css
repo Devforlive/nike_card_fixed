@@ -1,162 +1,158 @@
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -box-sizing: border-box;
 }
-
-.pseudo:before, .pseudo:after {
-    content: " ";
-    display: table;
+.nike-clearfix:before,
+.nike-clearfix:after {
+   content: "";
+   display: table;
 }
-
-.pseudo:after {
-    clear: both;
+.nike-clearfix:after {
+   clear: both;
 }
-
-.container, .container-center {
-    margin-left: auto;
-    margin-right: auto;
+.nike-clearfix {
+   clear: both;
+   *zoom: 1;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
+.nike-container {
+   width: 1200px;
+   margin: 0 auto;
+   font-family: Museo, sans-serif;
 }
-
-/* шрифт google: Lato */
-@font-face {
-    font-family: 'Lato', cursive;
-    font-weight: normal;
-    font-style: normal;
+.nike-product-card-dark {
+   font-size: 14px;
+   color: #000;
+   background: url('../img/bg.jpg') center center no-repeat;
+   background-size: cover;
 }
-
-body{
-  font: 100 14px/1.3 'Lato', Arial, sans-serif;
-  color: #e1e1e1;
-  background: url(../img/bg.jpg) 50% no-repeat;
-  background-size: cover;
-  letter-spacing: 0.02em;
+.nike-product-card-container {
+   width: 685px;
+   height: 390px;
+   margin: 100px auto;
+   background-color: #152335;
+   border-radius: 10px;
+   cursor: crosshair;
 }
-
-/* РАСПОЛОЖЕНИЕ */
-
-.container{
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 750px;
-  padding-top: 180px;
+.nike-product-card__logo {
+   margin-top: 24px;
+   margin-left: 21px;
 }
-.card{
-  background: #111a28;
-  padding: 24px 21px 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+.nike-product-card-image {
+   width: 60%;
+   float: left;
+   padding-left: 36px;
+   padding-top: 66px;
 }
-
-.float-left {
-    float: left;
+.nike-product-card-color-slider{
+   display: block;
+   margin: 60px auto 0;
+   padding-left: 0;
+   width: 100px;  
 }
-
-.float-right {
-    float: right;
+.nike-product-card-color__list{
+   list-style-type: none;
+   float: left;
+   padding: 5px;
 }
-
-.card__form{
-  margin-top: 14px;
+.nike-product-card-color__link1,
+.nike-product-card-color__link2,
+.nike-product-card-color__link3,
+.nike-product-card-color__link4 {
+   padding: 0;
+   width: 9px;
+   height: 9px;
+   outline: none;
+   border: 1px solid transparent;
+   border-radius: 50%;
+   cursor: pointer;
 }
-.card__content-left{
-  padding-top: 47px;
-  padding-left: 15px;
-  width: 57%;
+.nike-product-card-color__link1--active{
+   border-color: #7e838b;
+   transform: scale(1.8, 1.8);
+   background-color: #1f273f;
 }
-.card__color{
-  margin-top: 67px;
-  text-align: center;
+.nike-product-card-color__link1 {
+   background-color: #1f273f;
 }
-.card__color span{
-  margin: 0 2.5px;
-  height: 9px;
-  width: 9px;
-  border-radius: 50%;
-  vertical-align: middle;
-  cursor: pointer;
-  display: inline-block;
+.nike-product-card-color__link2 {
+   background-color: #ffffff;
 }
-.card__color span:hover{
-  width: 12px;
-  height: 12px;
-  margin: 0 1px;
+.nike-product-card-color__link3 {
+   background-color: #ed3333;
 }
-.card__color input:checked + span{ /* Shadow over button_1 */
-  width: 12px;
-  height: 12px;
-  margin: 0 1px;
-  box-shadow: 0 0 0 2px #7b8088;
+.nike-product-card-color__link4 {
+   background-color: #29e3ea;
 }
-.card__color--btn--1 span{
-  background: #1F273F;
+.nike-product-card-info {
+   width: 40%;
+   padding-left: 32px;
+   padding-right: 30px;
+   float: right;
 }
-.card__color--btn-2 span{
-  background: #fff;
+.nike-product-card-info__title{
+   font-size: 24px;
+   color: #B7B9BC;
+   margin-top: 12px;
+   margin-bottom: 9px;
+   letter-spacing: 0.4px;
 }
-.card__color--btn-3 span{
-  background: #ed3333;
+.nike-product-card-info__subtitle {   
+   font-size: 14px;
+   color: #5B636D;
+   margin-top: 8px;
+   letter-spacing: 0.2px;
 }
-.card__color--btn-4 span{
-  background: #29e3ea;
+.nike-card-info-rate {
+   float: left;
+   padding-left: 0;
+   margin-top: 12px;
+   width: 100%;
 }
-.card__color input{
-      display: none;
+.nike-card-info-rate__star {
+   list-style-type: none;
+   float: left;
+   padding-right: 1.4px;
+   cursor: pointer;
 }
-
-.card__content-right{
-  width: 34.5%;
+.nike-card-info-order-size-list__option {
+   text-align: center;
 }
-.card__title{
-  font-size: 24px;
-  font-weight: 100;
-  max-width: 165px;
-  margin: 0;
-  line-height: 1.08;
+.nike-card-info-order-size-list,
+.nike-card-info-order-qty-list {
+   width: 70px;
+   height: 30px;
+   background-color: #152335;
+   color: #A2A5AA;
+   outline: none;
+   border-color: #616873;
+   float: left;
+   margin-top: 10px;
+   margin-left: 2px;
+   padding-left: 8px;
+   transition: background-color 0.2s ease-in;
 }
-.card__subtitle{
-  margin: 10px 0 20px;
+.nike-card-info-order-size-list:hover,
+.nike-card-info-order-qty-list:hover {
+   background-color: #2A3545;
+   cursor: crosshair;
 }
-.star{
-  font: normal normal normal 14px/1 FontAwesome;
-  color: #9da0a6;
-  font-style: normal;
-  line-height: 1;
-  font-size: 12px;
+.nike-card-info-order-add {
+   width: 185px;
+   height: 40px;
+   background-color: #152335;
+   color: #A2A5AA;
+   outline: none;
+   border: 1px solid  #616873;
+   float: left;
+   margin-top: 30px;
+   margin-left: 2px;
+   padding-left: 0;
+   transition: background-color 0.2s ease-in;
 }
-.star--active{
-  color: #F7BF16;
-}
-.star:before {
-  content: "\f005";
-}
-.card__select, .card__button{
-  margin-left: 3px;
-}
-.card__select select, .card__button{
-  background: #111a28;
-  border: 1px solid #fff;
-  text-decoration: none;
-  outline: none;
-  opacity: 0.26;
-  color: #FFF;
-}
-.card__select select{
-  padding: 7px 10px;
-  margin-top: 23px;
-  cursor: pointer;
-}
-.card__button{
-  padding: 10px 57px;
-  margin-top: 29px;
-  background: #4c525a;
-}
-.card__button:hover, .card__select select:hover{
-  opacity: 0.5;
-  transition: opacity .3s ease-in;
+.nike-card-info-order-add:hover {
+   background-color: #2A3545;
+   cursor: pointer;
 }

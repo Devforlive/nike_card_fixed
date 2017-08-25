@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Nike_Product_Card</title>
-		
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- шрифт google Lato и rate-stars -->
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-		
-	</head>
-	<body>
-		<div class="container">  <!-- background-container -->
-		<section class="card">  <!-- product-card -->
-		<header class="card__header">  <!-- logotype-product-card -->
-		<a href="#" class="card__logo"><img src="img/logo.png" alt="Nike"></a>
-	</header>
-	<main>
-		<form class="card__form pseudo" action="#">
-			<div class="card__content-left float-left"> <!-- контент слева  -->
-				<img src="img/nike_shoe.png" alt="">
-				<div class="card__color"> <!-- buttons colors  -->
-				<label class="card__color--btn-1">
-					<input type="radio" name="color" value="dark" checked><span></span>
-				</label>
-				<label class="card__color--btn-2">
-					<input type="radio" name="color" value="white"><span></span>
-				</label>
-				<label class="card__color--btn-3">
-					<input type="radio" name="color" value="red"><span></span>
-				</label>
-				<label class="card__color--btn-4">
-					<input type="radio" name="color" value="blue"><span></span>
-				</label>
-			</div>
-		</div>
-		<div class="card__content-right float-right">  <!-- контент справа  -->
-			<h1 class="card__title">Nike SB Stefan Janoski Max</h1>
-			<p class="card__subtitle">Unisex Skateboarding Shoe</p>
-			
-			<div class="card__rating">
-				<i class="star star--active"></i>
-				<i class="star star--active"></i>
-				<i class="star star--active"></i>
-				<i class="star"></i>
-				<i class="star"></i>
-			</div>
-			<div class="card__select"> <!-- Size shoe menu -->
-			<select>
-				<option>Size</option>
-				<option>41</option>
-				<option>42</option>
-				<option>43</option>
-				<option>44</option>
-				<option>45</option>
-			</select>
-			<select>
-				<option>Qty</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-		<button class="card__button" type="submit">Add to cart</button>
-	</div>
-</form>
-</main>
-</section>
-</div>
-</body>
-</html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- 2й приоритет -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- 1й приоритет -->
+  <title>Nike_product_card_fixed</title>
+ </head>
+ <body class="nike-product-card-dark">
+  <main>
+   <section class="nike-product-card-container">
+    <header class="nike-product-card-header">
+     <a href="#" class="nike-product-card-header__link">
+      <img src="img/logo.png" alt="logo" class="nike-product-card__logo">
+     </a>
+    </header>
+    <div class="nike-product-card-image">
+     <img src="img/nike_shoe.png" alt="Nike SB Stefan Janoski Max" class="nike-product-card-image__item">
+     <ul class="nike-product-card-color-slider clearfix">
+      <li class="nike-product-card-color__list">
+       <button class="nike-product-card-color__link1 nike-product-card-color__link1--active"></button>
+      </li>
+      <li class="nike-product-card-color__list">
+       <button class="nike-product-card-color__link2"></button>
+      </li>
+      <li class="nike-product-card-color__list">
+       <button class="nike-product-card-color__link3"></button>
+      </li>
+      <li class="nike-product-card-color__list">
+       <button class="nike-product-card-color__link4"></button>
+      </li>
+     </ul>
+    </div>
+    <div class="nike-product-card-info">
+     <h1 class="nike-product-card-info__title">Nike SB Stefan Janoski Max</h1>
+     <h2 class="nike-product-card-info__subtitle">Unisex Skateboarding Shoe</h2>
+     <ul class="nike-card-info-rate clearfix">
+      <li class="nike-card-info-rate__star"><img src="img/star-active.png" alt="star gold" class="nike-card-info-rate__img"></li>
+      <li class="nike-card-info-rate__star"><img src="img/star-active.png" alt="star gold" class="nike-card-info-rate__img"></li>
+      <li class="nike-card-info-rate__star"><img src="img/star-active.png" alt="star gold" class="nike-card-info-rate__img"></li>
+      <li class="nike-card-info-rate__star"><img src="img/star.png" alt="star gray" class="nike-card-info-rate__img"></li>
+      <li class="nike-card-info-rate__star"><img src="img/star.png" alt="star gray" class="nike-card-info-rate__img"></li>
+     </ul>
+     <div class="nike-card-info-order clearfix">
+      <select class="nike-card-info-order-size-list">
+       <option class="nike-card-info-order-size-list__option">Size</option>
+       <option class="nike-card-info-order-size-list__option">UA 36</option>
+       <option class="nike-card-info-order-size-list__option">UA 37</option>
+       <option class="nike-card-info-order-size-list__option">UA 38</option>
+       <option class="nike-card-info-order-size-list__option">UA 39</option>
+       <option class="nike-card-info-order-size-list__option">UA 40</option>
+       <option class="nike-card-info-order-size-list__option">UA 41</option>
+       <option class="nike-card-info-order-size-list__option">UA 42</option>
+       <option class="nike-card-info-order-size-list__option">UA 43</option>
+       <option class="nike-card-info-order-size-list__option">UA 44</option>
+       <option class="nike-card-info-order-size-list__option">UA 45</option>
+      </select>
+      <select class="nike-card-info-order-qty-list">
+       <option class="nike-card-info-order-qty-list__option">Qty</option>
+       <option class="nike-card-info-order-qty-list__option">1</option>
+       <option class="nike-card-info-order-qty-list__option">2</option>
+       <option class="nike-card-info-order-qty-list__option">3</option>
+       <option class="nike-card-info-order-qty-list__option">4</option>
+       <option class="nike-card-info-order-qty-list__option">5</option>
+      </select>
+      <button class="nike-card-info-order-add">Add to cart</button>
+     </div>
+    </section>
+   </main>
+  </body>
+ </html>
